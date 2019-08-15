@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Circle</title>
+</head>
+<body>
+<script>
+    let myCircle = function (circle) {
+        this.circle = circle;
+        // tao doi tuong hinh tron
+
+        this.getCircle = function () {
+            return circle;
+        }
+        //xay dung phuong thuc tinh dien tich hinhh tron
+        this.getS = function () {
+            return Math.PI * (circle*circle);
+        }
+    }
+    let circle = new myCircle(5);
+    let r = circle.getCircle();
+    let s = circle.getS();
+    alert("Bán kính hình tròn là: "+ r+" và diện tích hình tròn là:  "+ s);
+
+
+</script>
+</body>
+</html>
